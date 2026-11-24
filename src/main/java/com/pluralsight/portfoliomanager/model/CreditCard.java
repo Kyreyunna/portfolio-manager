@@ -38,4 +38,5 @@ public class CreditCard extends Account {
         // because getValue() only needs to report a value—not change the object's saved state."
         return negative;
     }
+    public static void Card(){}
 }
