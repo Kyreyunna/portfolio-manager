@@ -11,6 +11,12 @@ public class CreditCard extends Account {
 
     public void charge(BigDecimal amount) {
         // TODO: a charge adds to what you owe
+        //getBalance?
+        //does that mean it takes away from the deposit method?
+//        subtract.deposit();
+//        BigDecimal addOwe = deposit().subtract(amount);
+//        setBalance(add);
+
     }
 
     public void pay(BigDecimal amount) {
