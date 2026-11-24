@@ -34,5 +34,12 @@ public abstract class Account implements Valuable{
         return balance;
     }
 
-
+    @Override
+    public String toString() {
+        return "Account{" +
+                "accountNumber=" + accountNumber +
+                ", name='" + name + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

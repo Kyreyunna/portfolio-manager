@@ -22,11 +22,12 @@ public class FinanceApplication {
         House house1= new House("Cottage", new BigDecimal("300000.00"), 1930, 1850, 3);
         Gold gold1 = new Gold("Gold bars", new BigDecimal(18000.00),15.0);
         Jewelry tiara1 = new Jewelry("Amy's tiara", new BigDecimal(5000.00), 24);
-        CreditCard.Card();
-    //I think i would need to create something like Math.max since math is a static method and Math
-        // is a class you wouldnt create new Math in that scenario and I think Credit card would be
-        // the same way so I sould mak sure CreditCard.card has a card as a static method. Maybe..
-        // but then how I would add that card to the list of valuables is tbd
+        CreditCard creditCard1 = new CreditCard(1234, "Fionna Campbell", new BigDecimal("2000.00"));
+//        CreditCard.Card();
+       // Card is subtracting form the overall Value I think.
+
+    //I think I would need to create something like Math.max
+        //Actually Credit card works the same as the rest, and I was overthinking it
 
 //        List<Valuable> valuables = new ArrayList<>();
 //        valuables.add(0,house1);
@@ -41,7 +42,8 @@ public class FinanceApplication {
         valuables.add(0, house1);
         valuables.add(1, gold1);
         valuables.add(2, tiara1);
-//        valuables.add(3, ); I want to add CreditCard here somehow
+        valuables.add(3, creditCard1);
+//        valuables.add(3, ); I want to add CreditCard here somehow.
         System.out.println("LinkedList: " + valuables);
         //needs to string now
 
